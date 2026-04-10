@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SOLE DISTRICT — Sneakers Premium</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ═══════════════════ LOADER ═══════════════════ -->
+  <div id="loader">
+    <div class="loader-bg"></div>
+    <div class="loader-content">
+      <div class="loader-logo">SOLE<span>DISTRICT</span></div>
+      <div class="loader-messages">
+        <span class="loader-msg active">Cargando experiencia…</span>
+        <span class="loader-msg">Preparando catálogo premium…</span>
+        <span class="loader-msg">Listo para vender.</span>
+      </div>
+      <div class="loader-bar-wrap">
+        <div class="loader-bar"></div>
+      </div>
+      <div class="loader-counter">0%</div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════ NAVBAR ═══════════════════ -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">SOLE<span>DISTRICT</span></a>
+      <ul class="nav-menu">
+        <li><a href="#hero" class="nav-link">Inicio</a></li>
+        <li><a href="#catalogo" class="nav-link">Catálogo</a></li>
+        <li><a href="#categorias" class="nav-link">Categorías</a></li>
+        <li><a href="#sobre" class="nav-link">Sobre nosotros</a></li>
+        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+      </ul>
+      <a href="#cta-servicio" class="btn-cotizar">Cotizar web →</a>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#hero" class="mobile-link">Inicio</a>
+      <a href="#catalogo" class="mobile-link">Catálogo</a>
+      <a href="#categorias" class="mobile-link">Categorías</a>
+      <a href="#sobre" class="mobile-link">Sobre nosotros</a>
+      <a href="#contacto" class="mobile-link">Contacto</a>
+      <a href="#cta-servicio" class="mobile-link cta-mobile">Cotizar web →</a>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════ HERO ═══════════════════ -->
+  <section id="hero">
+    <div class="hero-noise"></div>
+    <div class="hero-grid-lines"></div>
+    <div class="hero-inner">
+      <div class="hero-badge-row">
+        <span class="badge-pill">✦ Demo Profesional</span>
+        <span class="badge-pill outline">Disponible para tu negocio</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="line-reveal">Sneakers para</span>
+        <span class="line-reveal delay-1">cada <em>estilo.</em></span>
+      </h1>
+      <p class="hero-sub">Tu tienda online, lista para vender desde el día uno. Catálogo premium, filtros en tiempo real y experiencia que convierte visitas en ventas.</p>
+      <div class="hero-btns">
+        <a href="#catalogo" class="btn-primary">Ver catálogo</a>
+        <a href="#cta-servicio" class="btn-ghost">Quiero una web así →</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">+200</span>
+          <span class="stat-label">modelos</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">Stock</span>
+          <span class="stat-label">actualizado</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">Retiro</span>
+          <span class="stat-label">presencial</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-circle"></div>
+      <div class="floating-card card-1">
+        <span class="fc-tag">🔥 Trending</span>
+        <span class="fc-name">Jordan 4 Retro</span>
+        <span class="fc-price">$189.990</span>
+      </div>
+      <div class="floating-card card-2">
+        <span class="fc-tag">⭐ Top seller</span>
+        <span class="fc-name">Nike Air Max 90</span>
+        <span class="fc-price">$129.990</span>
+      </div>
+      <div class="hero-shoe-grid">
+        <div class="shoe-img-wrap s1"><div class="shoe-placeholder n1">👟</div></div>
+        <div class="shoe-img-wrap s2"><div class="shoe-placeholder n2">👟</div></div>
+        <div class="shoe-img-wrap s3"><div class="shoe-placeholder n3">👟</div></div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ BENEFICIOS ═══════════════════ -->
+  <section id="beneficios" class="benefits-section">
+    <div class="container">
+      <div class="benefits-grid">
+        <div class="benefit-card" data-aos>
+          <div class="bc-icon">🗂️</div>
+          <h3>Catálogo actualizado</h3>
+          <p>Nuevos modelos cada semana. Siempre lo último en sneaker culture.</p>
+        </div>
+        <div class="benefit-card" data-aos>
+          <div class="bc-icon">⚡</div>
+          <h3>Atención rápida</h3>
+          <p>Respondemos en minutos por WhatsApp. Sin esperas, sin vueltas.</p>
+        </div>
+        <div class="benefit-card" data-aos>
+          <div class="bc-icon">📍</div>
+          <h3>Retiro presencial</h3>
+          <p>Retira en nuestro local en el día. Verificá el producto antes de llevarlo.</p>
+        </div>
+        <div class="benefit-card" data-aos>
+          <div class="bc-icon">💎</div>
+          <h3>Experiencia premium</h3>
+          <p>Zapatillas seleccionadas. Calidad garantizada. Estética que habla sola.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ NUEVOS INGRESOS ═══════════════════ -->
+  <section class="section-block">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">🔥 Recién llegados</div>
+        <h2 class="section-title">Nuevos ingresos</h2>
+        <p class="section-sub">Lo más fresco del catálogo, directo para vos.</p>
+      </div>
+      <div class="product-row" id="nuevosRow"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ MÁS VENDIDOS ═══════════════════ -->
+  <section class="section-block dark-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">⭐ Los favoritos</div>
+        <h2 class="section-title">Más vendidos</h2>
+        <p class="section-sub">Los modelos que la comunidad elige una y otra vez.</p>
+      </div>
+      <div class="product-row" id="vendidosRow"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ CATÁLOGO COMPLETO ═══════════════════ -->
+  <section id="catalogo" class="section-block catalog-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">🛍️ Catálogo completo</div>
+        <h2 class="section-title">Todos los modelos</h2>
+        <p class="section-sub">Filtrá por marca, talla, precio o categoría — en tiempo real.</p>
+      </div>
+
+      <!-- FILTROS -->
+      <div class="filters-bar">
+        <div class="search-wrap">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+          <input type="text" id="searchInput" placeholder="Buscar modelo, marca…" />
+        </div>
+        <div class="filter-pills" id="brandFilter">
+          <button class="pill active" data-brand="all">Todos</button>
+          <button class="pill" data-brand="Nike">Nike</button>
+          <button class="pill" data-brand="Jordan">Jordan</button>
+          <button class="pill" data-brand="Adidas">Adidas</button>
+          <button class="pill" data-brand="New Balance">New Balance</button>
+          <button class="pill" data-brand="Vans">Vans</button>
+          <button class="pill" data-brand="Converse">Converse</button>
+          <button class="pill" data-brand="Puma">Puma</button>
+        </div>
+        <div class="filter-selects">
+          <select id="sizeFilter" class="f-select">
+            <option value="all">Todas las tallas</option>
+            <option value="38">38</option>
+            <option value="39">39</option>
+            <option value="40">40</option>
+            <option value="41">41</option>
+            <option value="42">42</option>
+            <option value="43">43</option>
+            <option value="44">44</option>
+            <option value="45">45</option>
+          </select>
+          <select id="priceFilter" class="f-select">
+            <option value="all">Cualquier precio</option>
+            <option value="0-80000">Hasta $80.000</option>
+            <option value="80000-120000">$80.000 – $120.000</option>
+            <option value="120000-160000">$120.000 – $160.000</option>
+            <option value="160000-999999">Más de $160.000</option>
+          </select>
+          <select id="sortFilter" class="f-select">
+            <option value="popular">Más vendidos</option>
+            <option value="nuevo">Nuevos primero</option>
+            <option value="precio-asc">Menor precio</option>
+            <option value="precio-desc">Mayor precio</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="results-count" id="resultsCount">Mostrando todos los productos</div>
+      <div class="products-grid" id="productsGrid"></div>
+      <div class="no-results hidden" id="noResults">
+        <span>😕</span>
+        <p>No encontramos zapatillas con esos filtros.</p>
+        <button onclick="resetFilters()" class="btn-primary">Limpiar filtros</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ CATEGORÍAS ═══════════════════ -->
+  <section id="categorias" class="section-block">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">🧩 Por estilo</div>
+        <h2 class="section-title">Explorá por categoría</h2>
+      </div>
+      <div class="categories-grid">
+        <div class="cat-card" onclick="filterByCategory('running')">
+          <div class="cat-emoji">🏃</div>
+          <h3>Running</h3>
+          <span>Pegasus · Ultraboost · Kinvara</span>
+        </div>
+        <div class="cat-card" onclick="filterByCategory('lifestyle')">
+          <div class="cat-emoji">🌆</div>
+          <h3>Lifestyle</h3>
+          <span>Air Force 1 · Samba · Old Skool</span>
+        </div>
+        <div class="cat-card" onclick="filterByCategory('basketball')">
+          <div class="cat-emoji">🏀</div>
+          <h3>Basketball</h3>
+          <span>Jordan 1 · Jordan 4 · Jordan 11</span>
+        </div>
+        <div class="cat-card" onclick="filterByCategory('skate')">
+          <div class="cat-emoji">🛹</div>
+          <h3>Skate</h3>
+          <span>Dunk Low · Vans · Converse</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ TESTIMONIOS ═══════════════════ -->
+  <section class="section-block dark-section testimonios-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">💬 Clientes reales</div>
+        <h2 class="section-title">Lo que dicen de nosotros</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="t-stars">★★★★★</div>
+          <p>"Encontré las Jordan 4 que buscaba hace meses. Llegaron perfectas y el trato fue excelente."</p>
+          <div class="t-author"><span class="t-avatar">ML</span><span>Matías L. — Santiago</span></div>
+        </div>
+        <div class="testimonial-card">
+          <div class="t-stars">★★★★★</div>
+          <p>"La atención por WhatsApp fue rapidísima. Me ayudaron a elegir la talla y quedé muy conforme."</p>
+          <div class="t-author"><span class="t-avatar">VP</span><span>Valentina P. — Viña del Mar</span></div>
+        </div>
+        <div class="testimonial-card">
+          <div class="t-stars">★★★★★</div>
+          <p>"Calidad real. Las Adidas Samba que compré son idénticas a lo que muestra el catálogo. Súper recomendado."</p>
+          <div class="t-author"><span class="t-avatar">FA</span><span>Felipe A. — Concepción</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ LOCAL / DISPONIBILIDAD ═══════════════════ -->
+  <section id="contacto" class="section-block local-section">
+    <div class="container">
+      <div class="local-grid">
+        <div class="local-info" data-aos>
+          <div class="section-tag">📍 Encuéntranos</div>
+          <h2 class="section-title">Retiro presencial disponible</h2>
+          <div class="local-status" id="localStatus">
+            <span class="dot"></span>
+            <span id="statusText">Verificando horario…</span>
+          </div>
+          <div class="local-details">
+            <div class="ld-row">
+              <span class="ld-icon">📌</span>
+              <span>Av. Providencia 1234, Providencia, Santiago</span>
+            </div>
+            <div class="ld-row">
+              <span class="ld-icon">🕐</span>
+              <span>Lun – Vie: 10:00 – 20:00 · Sáb: 10:00 – 18:00</span>
+            </div>
+            <div class="ld-row">
+              <span class="ld-icon">📱</span>
+              <span>+56 9 1234 5678</span>
+            </div>
+          </div>
+          <a href="https://wa.me/56912345678?text=Hola%2C%20quiero%20consultar%20disponibilidad" target="_blank" class="btn-primary">Consultar por WhatsApp</a>
+        </div>
+        <div class="local-map-placeholder" data-aos>
+          <div class="map-fake">
+            <div class="map-pin">📍</div>
+            <p>SOLE DISTRICT<br><small>Av. Providencia 1234</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ SOBRE NOSOTROS ═══════════════════ -->
+  <section id="sobre" class="section-block sobre-section">
+    <div class="container">
+      <div class="sobre-grid">
+        <div class="sobre-text" data-aos>
+          <div class="section-tag">🧠 Quiénes somos</div>
+          <h2 class="section-title">Más que una zapatería</h2>
+          <p>En <strong>Sole District</strong> creemos que las zapatillas son cultura. Cada modelo cuenta una historia, representa un estilo de vida y conecta con una comunidad.</p>
+          <p>Trabajamos para ofrecerte un catálogo seleccionado, atención real y una experiencia de compra que esté a la altura de lo que buscás.</p>
+          <p>No vendemos cualquier cosa. Vendemos lo que usaríamos nosotros.</p>
+          <div class="sobre-stats">
+            <div class="ss-item"><strong>+3 años</strong><span>en el mercado</span></div>
+            <div class="ss-item"><strong>+1.200</strong><span>clientes satisfechos</span></div>
+            <div class="ss-item"><strong>100%</strong><span>calidad garantizada</span></div>
+          </div>
+        </div>
+        <div class="sobre-visual" data-aos>
+          <div class="sobre-card-big">
+            <div class="scb-emoji">👟</div>
+            <div class="scb-text">
+              <strong>Colección 2025</strong>
+              <span>Las mejores marcas en un solo lugar</span>
+            </div>
+          </div>
+          <div class="sobre-card-sm">
+            <span>🔥</span>
+            <div>
+              <strong>+200 modelos</strong>
+              <small>en stock ahora</small>
+            </div>
+          </div>
+          <div class="sobre-card-sm right">
+            <span>⭐</span>
+            <div>
+              <strong>4.9 / 5.0</strong>
+              <small>calificación promedio</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ SECCIÓN VENTA DE SERVICIO ═══════════════════ -->
+  <section id="cta-servicio" class="service-section">
+    <div class="service-noise"></div>
+    <div class="container">
+      <div class="service-inner">
+        <div class="service-badge">✦ millesvc.studio</div>
+        <h2 class="service-title">Este podría ser<br><em>tu negocio.</em></h2>
+        <p class="service-sub">Lo que ves aquí no es una maqueta. Es una web real, lista para vender. La construimos para que la veas en acción — y para que imagines lo que podríamos hacer por tu negocio.</p>
+        <div class="service-features">
+          <div class="sf-item">
+            <span class="sf-icon">⚡</span>
+            <div>
+              <strong>Entrega en tiempo récord</strong>
+              <small>Tu web lista en días, no en meses.</small>
+            </div>
+          </div>
+          <div class="sf-item">
+            <span class="sf-icon">📱</span>
+            <div>
+              <strong>Mobile-first siempre</strong>
+              <small>Diseñada para vender desde el celular.</small>
+            </div>
+          </div>
+          <div class="sf-item">
+            <span class="sf-icon">💰</span>
+            <div>
+              <strong>Páginas que venden por vos</strong>
+              <small>Diseño, funcionalidad y conversión.</small>
+            </div>
+          </div>
+          <div class="sf-item">
+            <span class="sf-icon">🎯</span>
+            <div>
+              <strong>Hecha para Instagram</strong>
+              <small>Impacta en los primeros 3 segundos.</small>
+            </div>
+          </div>
+        </div>
+        <div class="service-cta-row">
+          <a href="https://wa.me/56912345678?text=Hola%2C%20vi%20la%20demo%20y%20quiero%20cotizar%20mi%20web" target="_blank" class="btn-primary big">Quiero mi web →</a>
+          <a href="#hero" class="btn-ghost big">Ver demo nuevamente</a>
+        </div>
+        <div class="service-brand">Creamos páginas que venden por ti — <strong>millesvc.studio</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ CTA FINAL ═══════════════════ -->
+  <section class="final-cta">
+    <div class="container">
+      <h2 class="final-title">Empezá a vender<br>online <em>hoy.</em></h2>
+      <p>Llevás la idea. Nosotros llevamos la web.</p>
+      <div class="final-btns">
+        <a href="https://wa.me/56912345678?text=Hola%2C%20quiero%20cotizar%20mi%20web" target="_blank" class="btn-primary big">Quiero mi web</a>
+        <a href="#hero" class="btn-ghost big">Ver demo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ FOOTER ═══════════════════ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo">SOLE<span>DISTRICT</span></div>
+          <p>Tu tienda de sneakers premium. Catálogo seleccionado, atención real, experiencia que convierte.</p>
+          <div class="footer-social">
+            <a href="#" class="social-btn">IG</a>
+            <a href="#" class="social-btn">WA</a>
+            <a href="#" class="social-btn">TK</a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Navegación</h4>
+          <a href="#hero">Inicio</a>
+          <a href="#catalogo">Catálogo</a>
+          <a href="#sobre">Sobre nosotros</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+        <div class="footer-links">
+          <h4>Marcas</h4>
+          <a href="#">Nike</a>
+          <a href="#">Jordan</a>
+          <a href="#">Adidas</a>
+          <a href="#">New Balance</a>
+          <a href="#">Vans</a>
+        </div>
+        <div class="footer-links">
+          <h4>millesvc</h4>
+          <a href="#cta-servicio">Cotizar web</a>
+          <a href="https://wa.me/56912345678" target="_blank">WhatsApp</a>
+          <p class="footer-note">Esta es una demo comercial desarrollada por <strong>millesvc.studio</strong>. ¿Querés tu propia versión? Hablemos.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Sole District Demo — Diseñado por <strong>millesvc.studio</strong></span>
+        <span class="footer-tag">Demo comercial · No es una tienda real</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════ MODAL DE PRODUCTO ═══════════════════ -->
+  <div id="productModal" class="modal-overlay">
+    <div class="modal-box">
+      <button class="modal-close" id="modalClose">✕</button>
+      <div class="modal-grid">
+        <div class="modal-image-side">
+          <div class="modal-main-img" id="modalMainImg"></div>
+          <div class="modal-thumb-row" id="modalThumbs"></div>
+        </div>
+        <div class="modal-info-side">
+          <div class="modal-badges" id="modalBadges"></div>
+          <div class="modal-brand" id="modalBrand"></div>
+          <h2 class="modal-name" id="modalName"></h2>
+          <div class="modal-price" id="modalPrice"></div>
+          <p class="modal-desc" id="modalDesc"></p>
+          <div class="modal-sizes-label">Elegí tu talla:</div>
+          <div class="modal-sizes" id="modalSizes"></div>
+          <div class="modal-stock" id="modalStock"></div>
+          <a href="#" class="btn-whatsapp" id="modalWA" target="_blank">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            Comprar por WhatsApp
+          </a>
+          <div class="modal-legal">*Demo comercial. Esta tienda no procesa pagos reales.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cart notification -->
+  <div class="toast" id="toast">
+    <span id="toastMsg">✓ Producto añadido</span>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
