@@ -505,3 +505,61 @@ window.addEventListener('scroll', () => {
 console.log('%c SOLE DISTRICT ', 'background:#e8ff00;color:#0a0a0a;font-weight:bold;font-size:16px;padding:4px 8px;border-radius:4px');
 console.log('%c Demo comercial — Desarrollado por millesvc.studio ', 'color:#888;font-size:11px');
 console.log('%c ¿Querés una web así para tu negocio? → wa.me/56912345678 ', 'color:#e8ff00;font-size:12px');
+
+/* ═══════════════════════════════════════════════
+   TABLA DE TALLAS — tab switching
+   ═══════════════════════════════════════════════ */
+(function initSizeGuide() {
+  const tabs = document.querySelectorAll('.sg-tab');
+  const tableH = document.getElementById('sizeTableHombre');
+  const tableM = document.getElementById('sizeTableMujer');
+  if (!tabs.length) return;
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      const gender = tab.dataset.gender;
+      if (gender === 'hombre') {
+        tableH.classList.remove('hidden');
+        tableM.classList.add('hidden');
+      } else {
+        tableM.classList.remove('hidden');
+        tableH.classList.add('hidden');
+      }
+    });
+  });
+})();
+
+/* ═══════════════════════════════════════════════
+   WHATSAPP FLOAT — compact on scroll
+   ═══════════════════════════════════════════════ */
+(function initWAFloat() {
+  const waFloat = document.getElementById('waFloat');
+  if (!waFloat) return;
+
+  // Show after 2 seconds
+  setTimeout(() => {
+    waFloat.style.opacity = '1';
+    waFloat.style.transform = 'translateY(0)';
+  }, 2000);
+
+  // Compact after scrolling
+  let lastScroll = 0;
+  window.addEventListener('scroll', () => {
+    const currentScroll = window.scrollY;
+    if (currentScroll > 300 && currentScroll > lastScroll) {
+      waFloat.classList.add('compact');
+    } else if (currentScroll < lastScroll || currentScroll < 200) {
+      waFloat.classList.remove('compact');
+    }
+    lastScroll = currentScroll;
+  }, { passive: true });
+})();
+
+/* ═══════════════════════════════════════════════
+   AOS — observe new sections
+   ═══════════════════════════════════════════════ */
+document.querySelectorAll('.ship-card').forEach(el => {
+  aoObserver.observe(el);
+});

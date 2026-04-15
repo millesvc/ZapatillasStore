@@ -35,8 +35,9 @@
       <ul class="nav-menu">
         <li><a href="#hero" class="nav-link">Inicio</a></li>
         <li><a href="#catalogo" class="nav-link">Catálogo</a></li>
-        <li><a href="#categorias" class="nav-link">Categorías</a></li>
-        <li><a href="#sobre" class="nav-link">Sobre nosotros</a></li>
+        <li><a href="#tallas" class="nav-link">Tallas</a></li>
+        <li><a href="#envios" class="nav-link">Envíos</a></li>
+        <li><a href="#sobre" class="nav-link">Nosotros</a></li>
         <li><a href="#contacto" class="nav-link">Contacto</a></li>
       </ul>
       <a href="#cta-servicio" class="btn-cotizar">Cotizar web →</a>
@@ -224,6 +225,137 @@
         <span>😕</span>
         <p>No encontramos zapatillas con esos filtros.</p>
         <button onclick="resetFilters()" class="btn-primary">Limpiar filtros</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ TABLA DE TALLAS ═══════════════════ -->
+  <section id="tallas" class="section-block size-guide-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">📐 Guía de tallas</div>
+        <h2 class="section-title">¿Cuál es tu talla?</h2>
+        <p class="section-sub">Convierte fácilmente entre tallas Chile (CL) y US. Nunca más te equivoques al comprar.</p>
+      </div>
+      <div class="size-guide-wrapper" data-aos>
+        <div class="size-guide-tabs">
+          <button class="sg-tab active" data-gender="hombre">👟 Hombre</button>
+          <button class="sg-tab" data-gender="mujer">👠 Mujer</button>
+        </div>
+        <div class="size-table-container">
+          <table class="size-table" id="sizeTableHombre">
+            <thead>
+              <tr>
+                <th>🇨🇱 Chile / EUR</th>
+                <th>🇺🇸 US</th>
+                <th>🇬🇧 UK</th>
+                <th>📏 CM aprox.</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>38</td><td>6</td><td>5</td><td>24.0 cm</td></tr>
+              <tr><td>39</td><td>6.5 – 7</td><td>5.5 – 6</td><td>24.5 cm</td></tr>
+              <tr><td>40</td><td>7 – 7.5</td><td>6 – 6.5</td><td>25.0 cm</td></tr>
+              <tr><td>41</td><td>8</td><td>7</td><td>25.5 cm</td></tr>
+              <tr><td class="highlight-row">42</td><td class="highlight-row">8.5 – 9</td><td class="highlight-row">7.5 – 8</td><td class="highlight-row">26.5 cm</td></tr>
+              <tr><td>43</td><td>9.5 – 10</td><td>8.5 – 9</td><td>27.0 cm</td></tr>
+              <tr><td>44</td><td>10 – 10.5</td><td>9 – 9.5</td><td>27.5 cm</td></tr>
+              <tr><td>45</td><td>11</td><td>10</td><td>28.5 cm</td></tr>
+              <tr><td>46</td><td>12</td><td>11</td><td>29.5 cm</td></tr>
+            </tbody>
+          </table>
+          <table class="size-table hidden" id="sizeTableMujer">
+            <thead>
+              <tr>
+                <th>🇨🇱 Chile / EUR</th>
+                <th>🇺🇸 US</th>
+                <th>🇬🇧 UK</th>
+                <th>📏 CM aprox.</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>35</td><td>5</td><td>3</td><td>22.0 cm</td></tr>
+              <tr><td>36</td><td>5.5 – 6</td><td>3.5</td><td>22.5 cm</td></tr>
+              <tr><td>37</td><td>6 – 6.5</td><td>4</td><td>23.5 cm</td></tr>
+              <tr><td>38</td><td>7 – 7.5</td><td>5</td><td>24.0 cm</td></tr>
+              <tr><td class="highlight-row">39</td><td class="highlight-row">8</td><td class="highlight-row">6</td><td class="highlight-row">24.5 cm</td></tr>
+              <tr><td>40</td><td>8.5 – 9</td><td>6.5 – 7</td><td>25.5 cm</td></tr>
+              <tr><td>41</td><td>9.5 – 10</td><td>7.5</td><td>26.0 cm</td></tr>
+              <tr><td>42</td><td>10.5</td><td>8</td><td>26.5 cm</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="size-guide-tip">
+          <span class="tip-icon">💡</span>
+          <div class="tip-content">
+            <strong>¿No sabés tu talla exacta?</strong>
+            <span>Escríbenos por WhatsApp y te ayudamos a encontrar la talla perfecta según la marca que te interesa.</span>
+          </div>
+          <a href="https://wa.me/56912345678?text=Hola%2C%20necesito%20ayuda%20para%20elegir%20mi%20talla%20%F0%9F%91%9F" target="_blank" class="btn-wa-tip">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            Consultar talla
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ ENVÍOS ═══════════════════ -->
+  <section id="envios" class="section-block shipping-section dark-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">🚚 Envíos a todo Chile</div>
+        <h2 class="section-title">Comprá desde donde estés</h2>
+        <p class="section-sub">Despachamos a cualquier ciudad del país. Rápido, seguro y coordinado por WhatsApp.</p>
+      </div>
+      <div class="shipping-grid">
+        <div class="ship-card featured" data-aos>
+          <div class="ship-icon-big">🗺️</div>
+          <h3>Cobertura nacional</h3>
+          <p>Enviamos a Santiago, Valparaíso, Concepción, Puerto Montt, Antofagasta, Temuco y <strong>todas las regiones</strong> de Chile.</p>
+          <div class="ship-badge">Todo Chile cubierto</div>
+        </div>
+        <div class="ship-card" data-aos>
+          <div class="ship-icon">⚡</div>
+          <h3>Entrega en 2–5 días</h3>
+          <p>Una vez confirmado el pago, despachamos el mismo día o al día siguiente. Tu pedido llega en plazo récord.</p>
+          <div class="ship-timeline">
+            <div class="tl-step done"><span>Pago</span></div>
+            <div class="tl-line"></div>
+            <div class="tl-step"><span>Despacho</span></div>
+            <div class="tl-line"></div>
+            <div class="tl-step"><span>Entrega</span></div>
+          </div>
+        </div>
+        <div class="ship-card" data-aos>
+          <div class="ship-icon">💬</div>
+          <h3>Coordinación directa por WhatsApp</h3>
+          <p>Sin formularios ni sistemas complicados. Te contactamos directo por WhatsApp para coordinar cada detalle de tu envío.</p>
+          <a href="https://wa.me/56912345678?text=Hola%2C%20quiero%20comprar%20unas%20zapatillas%2C%20%C2%BFme%20ayudas%20con%20la%20talla%20y%20disponibilidad%3F" target="_blank" class="ship-wa-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            Iniciar compra
+          </a>
+        </div>
+        <div class="ship-card" data-aos>
+          <div class="ship-icon">🛡️</div>
+          <h3>Compra 100% segura</h3>
+          <p>Más de <strong>1.200 clientes</strong> ya compraron con nosotros. Tu producto llega protegido y en perfectas condiciones.</p>
+          <div class="trust-pills">
+            <span class="trust-pill">✓ Verificado</span>
+            <span class="trust-pill">✓ Sin estafas</span>
+            <span class="trust-pill">✓ Recomendado</span>
+          </div>
+        </div>
+      </div>
+      <div class="shipping-cta-banner">
+        <div class="scb-left">
+          <strong>¿Tenés dudas sobre el envío a tu ciudad?</strong>
+          <span>Escríbenos ahora y te respondemos en minutos.</span>
+        </div>
+        <a href="https://wa.me/56912345678?text=Hola%2C%20quiero%20saber%20si%20envían%20a%20mi%20ciudad%20y%20cuánto%20demora" target="_blank" class="btn-primary big">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Consultar envío →
+        </a>
       </div>
     </div>
   </section>
@@ -499,6 +631,15 @@
   <!-- Cart notification -->
   <div class="toast" id="toast">
     <span id="toastMsg">✓ Producto añadido</span>
+  </div>
+
+  <!-- ═══════════════════ WHATSAPP FLOTANTE ═══════════════════ -->
+  <div class="wa-float" id="waFloat">
+    <a href="https://wa.me/56912345678?text=Hola%2C%20quiero%20comprar%20unas%20zapatillas%2C%20%C2%BFme%20ayudas%20con%20la%20talla%20y%20disponibilidad%3F" target="_blank" class="wa-float-btn" id="waBtn" aria-label="Contactar por WhatsApp">
+      <svg class="wa-icon" width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+      <span class="wa-label">¿Te ayudo a comprar?</span>
+    </a>
+    <div class="wa-ping"></div>
   </div>
 
   <script src="app.js"></script>
